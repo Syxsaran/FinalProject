@@ -38,12 +38,24 @@ classDiagram
   -date
   add()
   }
+  class classfood{
+  -number
+  -name
+  -amount
+  -date
+  add()
+  }
   class Filecoffee{
   -
   open()
   save()
   }
   class Filedessert{
+  -
+  open()
+  save()
+  }
+  class Filefood{
   -
   open()
   save()
@@ -64,6 +76,18 @@ classDiagram
   -location file
   save file()
   }
+  class openfood{
+  -location file
+  open file()
+  }
+  class savefood{
+  -location file
+  save file()
+  }
+  
+  savefood --|> Filefood
+  openfood --|> Filefood
+  
   savecoffee --|> Filecoffee
   opencoffee --|> Filecoffee
   
@@ -72,6 +96,7 @@ classDiagram
   
   Filedessert --|> classdessert
   Filecoffee --|> classcoffee
+  Filefood --|> classfood
   
   classcoffee --|> form2
   classdessert --|> form2
@@ -80,4 +105,4 @@ classDiagram
   logout --|> form1
   ```
 **เจ้าของโปรแกรม**
-```นาย ศรันย์ ซุ่นเส้ง```
+```นาย ศรันย์ ซุ่นเส้ง 643450086-6```
