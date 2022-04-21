@@ -100,6 +100,8 @@ classDiagram
   
   classcoffee --|> form2
   classdessert --|> form2
+  classfood --|> form2
+
   
   form2 --|> form1
   logout --|> form1
